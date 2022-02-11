@@ -3,8 +3,8 @@ Just add to your project, in the same folder that you have the chromedriver and 
 
 ```py
 try:
-    browser = webdriver.Chrome(executable_path='./chromedriver')
+    browser = webdriver.Chrome(executable_path= folder + '/chromedriver')
 except Exception as error:
     update_chromedriver.start(error)
-    browser = webdriver.Chrome(executable_path='./chromedriver')
+    browser = webdriver.Chrome(executable_path= folder + '/chromedriver')
 ```
